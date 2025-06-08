@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="#intro" class="brand-link">Portfolio</a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="nav-menu" id="nav-menu">
+                <a href="#intro" class="nav-link active" data-section="intro">Intro</a>
+                <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                <a href="#hobbies" class="nav-link" data-section="hobbies">Hobbies</a>
+                <a href="#education" class="nav-link" data-section="education">Education</a>
+                <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div class="animated-bg" id="animated-bg">
+            <div class="glow"></div>
+            <div class="glow"></div>
+            <div class="glow"></div>
+            <!-- Stars will be added by JavaScript -->
+        </div>
+        
+        <div class="container">
+            <div class="intro-content">
+                <div class="profile-image">
+                    <img src="profile.png" alt="Profile" class="profile-img">
+                    <div class="profile-ring"></div>
+                </div>
+                
+                <h1 class="intro-title">Nikhil</h1>
+                <div class="intro-role">
+                    <span id="role-text">Student</span>
+                </div>
+                
+                <p class="intro-description">
+                    Welcome to my digital portfolio! I'm a passionate BTech IT student at Delhi Technological University,
+                    exploring the world of technology, machine learning, and web development. Join me as I share my projects, 
+                    hobbies, and academic journey.
+                </p>
+                
+                <div class="intro-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-arrow-right"></i>
+                        View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i> 
+                        Get in Touch
+                    </a>
+                    <a href="/resume.pdf" class="btn btn-outline" target="_blank">
+                        <i class="fas fa-download"></i> 
+                        Resume
+                    </a>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://github.com/Niku17" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nikhil-kaushik-b974702bb/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <a href="#projects" class="scroll-link">
+                <span>Explore More</span>
+                <i class="fas fa-arrow-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>My <span class="text-primary">Projects</span></h2>
+                <div class="section-divider"></div>
+                <p>A collection of projects showcasing my skills in web development, machine learning, and problem-solving.</p>
+            </div>
+            
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="algorithm">Algorithms</button>
+            </div>
+            
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projects will be populated by JavaScript -->
+            </div>
+            
+            <div class="section-footer">
+                <a href="https://github.com" target="_blank" class="btn btn-outline">
+                    <i class="fab fa-github"></i> View All Projects on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="hobbies-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>My <span class="text-primary">Hobbies</span> & Interests</h2>
+                <div class="section-divider"></div>
+                <p>Beyond academics and coding, I'm passionate about various activities that keep me engaged and motivated.</p>
+            </div>
+            
+            <div class="hobbies-grid" id="hobbies-grid">
+                <!-- Hobbies will be populated by JavaScript -->
+            </div>
+            
+            <div class="hobby-stats">
+                <div class="stat-item">
+                    <i class="fas fa-code"></i>
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-brain"></i>
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">SRT Problems Solved</div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-music"></i>
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-label">Songs in Playlist</div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Technologies Learned</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>My <span class="text-primary">Education</span> Journey</h2>
+                <div class="section-divider"></div>
+                <p>My academic journey from school to university, showcasing consistent excellence and growth.</p>
+            </div>
+            
+            <div class="education-timeline" id="education-timeline">
+                <!-- Education timeline will be populated by JavaScript -->
+            </div>
+            
+            <div class="certifications">
+                <h3>Certifications & Additional Learning</h3>
+                <div class="cert-grid" id="cert-grid">
+                    <!-- Certifications will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>My <span class="text-primary">Skills</span> & Expertise</h2>
+                <div class="section-divider"></div>
+                <p>A comprehensive overview of my technical abilities and programming languages I've mastered.</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skills-card">
+                    <h3><i class="fas fa-laptop-code"></i> Programming Languages</h3>
+                    <div class="skills-list" id="programming-skills">
+                        <!-- Programming skills will be populated by JavaScript -->
+                    </div>
+                </div>
+                
+                <div class="skills-card">
+                    <h3><i class="fas fa-globe"></i> Web Technologies</h3>
+                    <div class="skills-list" id="web-skills">
+                        <!-- Web skills will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="additional-skills">
+                <div class="ml-card">
+                    <h3><i class="fas fa-brain"></i> Machine Learning & AI</h3>
+                    <div class="skills-list" id="ml-skills">
+                        <!-- ML skills will be populated by JavaScript -->
+                    </div>
+                </div>
+                
+                <div class="tools-card">
+                    <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                    <div class="tools-list" id="tools-list">
+                        <!-- Tools will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Let's <span class="text-primary">Connect</span></h2>
+                <div class="section-divider"></div>
+                <p>I'm always excited to connect with fellow developers, students, and professionals.</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>I'm currently a BTech IT student at Delhi Technological University, passionate about technology and always open to new opportunities.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon email">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>nikilpandit2004@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon phone">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+91 9310445298</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon location">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Delhi, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-section">
+                        <h4>Follow Me</h4>
+                        <div class="social-links">
+                            <a href="https://github.com" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <h3>Send me a message</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved. Built with passion and dedication.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
