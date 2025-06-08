@@ -21,7 +21,7 @@ const projectsData = [
     image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&h=300&fit=crop&auto=format",
     category: "web",
     tags: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "Animations"],
-    github: "https://github.com/Niku17/MyPortfolio",
+    github: "https://niku17.github.io/Portfolio/",
     demo: "https://your-portfolio.vercel.app",
     date: "2024",
     status: "Completed",
